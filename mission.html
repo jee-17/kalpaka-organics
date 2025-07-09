@@ -16,10 +16,20 @@
     <img src="logo.jpeg" class="loading-logo" alt="Loading..." />
   </div>
 
-  <!-- Header -->
+   <!-- Header -->
   <header>
-    <img src="logo.jpeg" alt="Kalpaka Logo" class="logo"/><h1>Organics</h1>
-    <nav>
+    <div class="header-left">
+      <img src="logo.jpeg" alt="Kalpaka Logo" class="logo" />
+      <h1 class="company-name">Kalpaka Organics</h1><br>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav id="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="mission.html">Our Mission</a>
@@ -28,6 +38,14 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navbar");
+      nav.classList.toggle("show");
+    }
+  </script>
+
 
   <!-- Main Content -->
   <main class="container"><section class="hero"><h1>Our Mission</h1> </section>
